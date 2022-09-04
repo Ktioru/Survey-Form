@@ -23,7 +23,6 @@ body {
     width: 90vh;
     min-width: 300px;
     max-width: 500px;
-    height: 80vh;
     background-color: #1e2124;
     margin: auto;
     padding: 2rem;
@@ -31,6 +30,12 @@ body {
 }
 
 label {
-    display: inline-block;
+    display: block;
+    padding: 0.5rem;
     
+    
+}
+
+input, textarea, select {
+    width: 100%;
 }

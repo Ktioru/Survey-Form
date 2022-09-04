@@ -8,6 +8,42 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <h1 id="title">Survey Form</h1>
+    <p id="description">It takes no time, and helps uor plataform grow</p>
+    <form id="survey-form">
+        <fieldset>
+        <label id="name-label">Name: <input id="name" type="text" required></label>
+        <label id="email-label">Email: <input id="email" type="text" required></label>
+        <label id="age-label">Age: <input id="number" type="number"></label>
+    </fieldset>
+    <fieldset>
+        <label id="dropdown-label">Level of education:
+            <select id="dropdown" required>
+                <option>Primary Education</option>
+                <option>Secondary Education</option>
+                <option>Higher Education</option>
+                <option>Master's Degree</option>
+                <option>Ph.D</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <p>Select what bests describe your current role:</p>
+            <label id="student-label"><input type="radio" name="role"> Student</label>
+            <label id="full-label"><input type="radio" name="role"> Full time worker</label>
+            <label id="part-label"><input type="radio" name="role"> Part time worker</label>
+        </label>
+    </fieldset>
+    <fieldset>
+        <label id="terms-label"><input type="checkbox" value="terms" required> I Accept the <a>terms and conditions</a></label>
+        <label id="receive-label"><input type="checkbox" value="receive"> I want to receive important information on my email</label>
+    </fieldset>
+    <fieldset>
+        <p>Provide additional information or sugestion (optional):</p>
+        <label id="additional-information"> <input type="textarea" placeholder="Your form is great!"></label>
+    </fieldset>
+    <fieldset>
+        <label><input type="button" id="submit" value="Submit"></label>
+    </fieldset>
+    </form>
 </body>
 </html>
